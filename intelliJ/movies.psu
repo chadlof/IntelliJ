@@ -1,0 +1,95 @@
+//movie pseudo code
+
+//classes
+
+CLASS person
+	DECLARATIONS
+		private string Chad
+		private string Jesse
+		private string Shane
+		
+ENDCLASS
+	
+CLASS person
+	DECLARATIONS
+		private string action
+		private string adventure
+		private string comedy
+		private string drama
+		private string history
+		private string sci_fi
+		
+ENDCLASS
+		
+CLASS movie
+	DECLARATIONS
+		
+		
+		
+		
+		
+		
+ENDCLASS	
+		
+//main program
+START
+	DECLARATIONS
+		private string person
+		private string QUIT = quit
+		
+	person = houseKeeping()
+	WHILE person <> QUIT
+		getGenre()
+	ENDWHILE
+	getOutput()
+	finshUp()
+STOP
+
+//main methods
+public static string houseKeeping()
+	DECLARATIONS
+		string person
+	OUTPUT "Welcome to our movie recommendation app"
+	OUTPUT "Enter either Chad, Jesse or Shane to see their recommended movies"
+	INPUT person
+	WHILE person <> Chad AND Jesse AND Shane
+		OUTPUT "You have entered a unacceptable name"
+		OUTPUT " Acceptable names are Chad, Jesse and Shane"
+		OUTPUT " Also make sure to capitalize the first letter in the name"
+		OUTPUT "Enter either Chad, Jesse or Shane to see their recommended movies"
+		INPUT person
+	ENDWHILE
+RETURN person
+
+public static string getGenre()
+	DECLARATIONS
+		private string genre
+		private string movie
+	OUTPUT "For a list of",person,"'s recommended movies. Enter the genre you would like to see. "
+	OUTPUT "Acceptable geres are action, adventure, comedy, drama, history and sci_fi"
+	INPUT genre
+	WHILE genre <> action AND adventure AND comedy AND drama AND history AND sci_fi
+		OUTPUT " You have entered a unacceptable genre"
+		OUTPUT "Acceptable geres are action, adventure, comedy, drama, history and sci_fi"
+		OUTPUT " Enter either action, adventure, comedy, drama, history and sci_fi"
+		INPUT genre
+	ENDWHILE
+RETURN genre
+
+public static void getOutput()
+
+RETURN
+
+public static void finshUp()
+OUTPUT " Thanks for useing or app!"
+
+RETURN
+			
+			
+			
+			
+			
+			
+			
+			
+			
