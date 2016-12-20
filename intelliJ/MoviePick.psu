@@ -1,0 +1,70 @@
+//J.Valley, S.Meier, C.Lofgren
+//Pseudo Code for Assignment 8
+//Favorite Movie Program
+
+CLASS MoviePerson
+	DECLARATIONS
+		private string name
+	
+	public void setName (string Name)
+		name = Name
+	RETURN
+	
+	public string getName()
+	RETURN name
+ENDCLASS
+
+START
+	DECLARATIONS
+        num start
+		string name
+        string PERSON[] = ["Chad", "Jesse", "Shane"]
+        string GENRE[] = ["Action", "Comedy", "Drama", "Family", "Horror", "Sci-Fi & Fantasy"]
+        string CHAD[] = ["Gladiator", "Mean Girls", "Titanic", "Minions", "Friday the 13th", "Star Wars"]
+        string JESSE[] = ["Indiana Jones", "O Brother, Where Art Thou?", "Good Will Hunting", "Trolls", "Nightmare on Elm Street", "Batman"]
+        string SHANE[] = ["The Rock", "Meet the Parents", "Forrest Gump", "Lion King", "Jaws", "Avatar"]
+        num person, genre
+        num QUIT = -1
+		MoviePerson aPerson = new MoviePerson()
+		
+    OUTPUT "This program will let you know the favorite movie of any group member."
+    OUTPUT "Please enter 1 to start or -1 to quit."
+    INPUT start
+    WHILE start <> isNumeric() OR (start <> 1 AND start <> -1)
+        OUTPUT "Invalid entry. Please enter either 1 to start or -1 to quit."
+        INPUT start
+	ENDWHILE	
+    WHILE start <> QUIT
+        OUTPUT "#1 is Chad, #2 is Jesse, #3 is Shane"
+        OUTPUT "Please enter the number of the group member from the list: "
+		INPUT person
+        WHILE person <> isNumeric() OR (person < 1 OR person > 3)
+			OUTPUT "Please enter an integer. Enter 1 for Chad, 2 for Jesse, or 3 for Shane. "
+            INPUT person
+        ENDWHILE
+		person = person - 1
+		name = PERSON[person]
+		aPerson.setName(name)
+        OUTPUT "You picked " + aPerson.getName() + ". Please pick a movie genre from the following choices:"
+        OUTPUT "#1 is Action, #2 is Comedy, #3 is Drama, #4 is Family, #5 is Horror, #6 is Sci-Fi & Fantasy"
+        WHILE genre <> isNumeric() OR (genre < 1 OR genre > 6)
+			OUTPUT "Please enter an integer. Enter 1 for Action, 2 for Comedy, 3 for Drama, 4 for Family, 5 for Horror, or 6 for Sci-Fi/Fantasy."
+            INPUT genre
+        ENDWHILE
+		genre = genre - 1
+        IF person == 0
+			OUTPUT aPerson.getName() + "'s favorite " + GENRE[genre] + " movie is " + CHAD[genre]
+        ELSEIF person == 1
+			OUTPUT aPerson.getName() + "'s favorite " + GENRE[genre] + " movie is " + JESSE[genre]
+        ELSE
+			OUTPUT aPerson.getName() + "'s favorite " + GENRE[genre] + " movie is " + SHANE[genre]
+		ENDIF
+		OUTPUT "You can run the program again by entering 1, or you can quit by entering -1"
+        INPUT start
+		WHILE start <> isNumeric() OR (start <> 1 AND start <> -1)
+			OUTPUT "Invalid entry. Please enter either 1 to start or -1 to quit."
+			INPUT start
+		ENDWHILE
+	ENDWHILE
+    OUTPUT "Thank you for using this program. Go watch a movie :)"
+STOP 

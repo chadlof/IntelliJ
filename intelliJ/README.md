@@ -1,6 +1,6 @@
-# [aboutIntelliJ](http://startbootstrap.com/)
+# [aboutIntelliJ](https://chadlof.github.io/IntelliJ/intelliJ/)
 
-[aboutIntelliJ](http://startbootstrap.com/template-overviews/grayscale/) is an informational webpage about the [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+[aboutIntelliJ](https://chadlof.github.io/IntelliJ/intelliJ/) is an informational webpage about the [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 
 ## About aboutIntelliJ
 
