@@ -6,6 +6,8 @@
 
 This webpage was created for a class assignment and was coded by Chad Lofgren, Jesse Valley, and Shane Meier. The webpage examines the IntelliJ IDEA, giving an overview of the features, shortcuts and plugins of IntellijIDEA.
 
+This is a great tutorial to set up and use IntelliJ for the first time: [Tutorial](https://www.jetbrains.com/help/idea/2016.3/tutorial-creating-running-and-packaging-your-first-java-application.html)
+
 ## Creators
 
 The **aboutIntelliJ** webpage was created by Chad Lofgren, Jesse Valley, and Shane Meier. It is built around the **Grayscale** theme from Start Bootstrap.
